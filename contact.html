@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="./assets/css/fontawesome.css" rel="stylesheet">
+  <link href="./assets/css/brands.css" rel="stylesheet">
+  <link href="./assets/css/solid.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contact.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+  <script src="./js/main.js" defer></script>
+  <script src="./js/map.js" defer></script>
+  <script src="./js/contact.js" defer></script>
+
+  <title>Frontend Mentor | Arch Studio Website Challenge</title>
+</head>
+
+<body>
+
+  <header class="primary-header |  gap-bott-header">
+    <div class="header-collection | container">
+      <a href="./index.html">
+        <img class="header-logo" src="./assets/logo.svg" alt="arch logo">
+      </a>
+      <button class="mobile-nav" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="primary-nav fs-300 fw-bold">
+        <ul>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><button class="light-dark-toggle" data-mode="light" aria-label="">
+              <span class="sr-only">Light or Dark mode toggle</span>
+              <span class="toggler"></span>
+            </button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact first-sub-section">
+      <div class="contact-content | container">
+        <picture class="contact-content-img">
+          <source srcset="./assets/contact/desktop/image-hero.jpg" media="(min-width: 60em)">
+          <source srcset="./assets/contact/tablet/image-hero.jpg" media="(min-width: 40em)">
+          <img src="./assets/contact/mobile/image-hero.jpg" alt="old telephone">
+        </picture>
+        <div class="contact-content-desc">
+          <h1 class="primary-page-title fs-l fw-bold text-primary-100">Contact</h1>
+          <div class="contact-content-info">
+            <h3 class="main-titles | fs-titles text-primary-700">Tell us about your project</h3>
+            <p>We’d love to hear more about your project. Please, leave a message below or give
+              us a call. We have two offices, one in Texas and one in Tennessee. If you find
+              yourself nearby, come say hello!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-details second-sub-section">
+      <div class="contact-details-content | container">
+        <h3 class="main-titles | fs-titles text-primary-700">Contact <br> Details</h3>
+        <div class="details-container">
+          <div class="details">
+            <p class="fw-bold">Main Office</p>
+            <p>Mail: archone@mail.com</p>
+            <p>Address: 1892 Chenoweth Drive TN</p>
+            <p>Phone: 123-456-3451</p>
+          </div>
+          <button class="link-btn map-view">
+            View on Map
+            <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+          </button>
+        </div>
+        <div class="details-container">
+          <div class="details">
+            <p class="fw-bold">Office II</p>
+            <p>Mail: archtwo@mail.com</p>
+            <p>Address: 3399 Wines Lane TX</p>
+            <p>Phone: 832-123-4321</p>
+          </div>
+          <button class="link-btn map-view">
+            View on Map
+            <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="map second-sub-section">
+      <div class="container">
+        <div id="map"></div>
+      </div>
+    </section>
+
+    <section class="connect third-sub-section">
+      <div class="connect-content container">
+        <h3 class="main-titles | fs-titles text-primary-700">Connect with us</h3>
+        <form action="" class="form">
+          <div>
+            <label for="name">Incorrect input</label>
+            <input type="text" id="name" name="name" placeholder="Name" title="Enter your name" pattern="[A-Z a-z]{3,}"
+              required>
+          </div>
+          <div>
+            <label for="email">Incorrect input</label>
+            <input type="email" id="email" name="email" placeholder="Email" title="Enter your email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          </div>
+          <div>
+            <label for="message">Incorrect input</label>
+            <input type="text" id="message" name="message" placeholder="Message" title="What do you want to say to us?"
+              required>
+          </div>
+          <button class="form-submit">
+            <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer | container">
+    <div class="footer-container">
+      <div class="footer-logo-container">
+        <a href="./index.html">
+          <img class="footer-logo" src="./assets/footer-logo.svg" alt="arch logo">
+        </a>
+      </div>
+      <nav class="secondary-nav">
+        <ul>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="./portfolio.html" type="button" class="link-btn">
+        See Our Portfolio
+        <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

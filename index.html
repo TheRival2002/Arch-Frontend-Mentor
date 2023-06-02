@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="./assets/css/fontawesome.css" rel="stylesheet">
+  <link href="./assets/css/brands.css" rel="stylesheet">
+  <link href="./assets/css/solid.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <script src="./js/main.js" defer></script>
+
+  <title>Frontend Mentor | Arch Studio Website Challenge</title>
+</head>
+
+<body>
+
+  <header class="primary-header |  gap-bott-header">
+    <div class="header-collection | container">
+      <a href="./index.html">
+        <img class="header-logo" src="./assets/logo.svg" alt="arch logo">
+      </a>
+      <button class="mobile-nav" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="primary-nav fs-300 fw-bold">
+        <ul>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><button class="light-dark-toggle" data-mode="light" aria-label="">
+              <span class="sr-only">Light or Dark mode toggle</span>
+              <span class="toggler"></span>
+            </button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="project-collection | text-neutral-100">
+    <div class="collection-carousel | container">
+      <div class="collection-info">
+        <picture class="img-container">
+          <source srcset="./assets/home/desktop/image-hero-paramour.jpg" media="(min-width: 60em)">
+          <source srcset="./assets/home/tablet/image-hero-paramour.jpg" media="(min-width: 40em)">
+          <img class="project-img" src="./assets/home/mobile/image-hero-paramour.jpg"
+            alt="expensive large transparent building">
+        </picture>
+        <div class="collection-desc">
+          <h2 class="fs-titles fw-bold">Project <br> Paramour</h2>
+          <p>Project made for an art museum near Southwest London. Project Paramour is a statement of
+            bold, modern
+            architecture.</p>
+          <a href="./portfolio.html" type="button" class="link-btn">
+            See Our Portfolio
+            <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="collection-info">
+        <picture class="img-container">
+          <source srcset="./assets/home/desktop/image-hero-seraph.jpg" media="(min-width: 60em)">
+          <source srcset="./assets/home/tablet/image-hero-seraph.jpg" media="(min-width: 40em)">
+          <img class="project-img" src="./assets/home/mobile/image-hero-seraph.jpg" alt="modern hallwey">
+        </picture>
+        <div class="collection-desc">
+          <h2 class="fs-titles fw-bold">Seraph <br> Station</h2>
+          <p>The Seraph Station project challenged us to design a unique station that would
+            transport people through time. The result is a fresh and futuristic model
+            inspired by space stations.</p>
+          <a href="./portfolio.html" type="button" class="link-btn">
+            See Our Portfolio
+            <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="collection-info">
+        <picture class="img-container">
+          <source srcset="./assets/home/desktop/image-hero-federal.jpg" media="(min-width: 60em)">
+          <source srcset="./assets/home/tablet/image-hero-federal.jpg" media="(min-width: 40em)">
+          <img class="project-img" src="./assets/home/mobile/image-hero-federal.jpg" alt="minimalism building">
+        </picture>
+        <div class="collection-desc">
+          <h2 class="fs-titles fw-bold">Federal II <br> Tower</h2>
+          <p>A sequel theme project for a tower originally built in the 1800s. We achieved
+            this with a striking look of brutal minimalism with modern touches.</p>
+          <a href="./portfolio.html" type="button" class="link-btn">
+            See Our Portfolio
+            <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="collection-info">
+        <picture class="img-container">
+          <source srcset="./assets/home/desktop/image-hero-trinity.jpg" media="(min-width: 60em)">
+          <source srcset="./assets/home/tablet/image-hero-trinity.jpg" media="(min-width: 40em)">
+          <img class="project-img" src="./assets/home/mobile/image-hero-trinity.jpg" alt="a wide transparent building">
+        </picture>
+        <div class="collection-desc">
+          <h2 class="fs-titles fw-bold">Trinity Bank <br> Tower</h2>
+          <p>Trinity Bank challenged us to make a concept for a 84 story building located
+            in the middle of a city with a high earthquake frequency. For this project we
+            used curves to blend design and stability to meet our objectives.</p>
+          <a href="./portfolio.html" type="button" class="link-btn">
+            See Our Portfolio
+            <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="project-carousel-nav | fw-bold fs-300">
+        <button>
+          01
+        </button>
+        <button>
+          02
+        </button>
+        <button>
+          03
+        </button>
+        <button>
+          04
+        </button>
+      </div>
+      <div class="project-carousel-arrows">
+        <button>
+          <i class="fa-solid fa-reply"></i>
+        </button>
+        <button>
+          <i class="fa-solid fa-share"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="welcome-section first-sub-section | container">
+      <h1 class="primary-page-title fs-l fw-bold text-primary-100">Welcome</h1>
+      <div class="welcome-content">
+        <div class="welcome-content-info">
+          <h3 class="main-titles | fs-titles text-primary-700">Welcome to Arch Studio</h3>
+          <p>We have a unique network and skillset to help bring your projects to life. Our
+            small team of highly skilled individuals combined with our large network put us
+            in a strong position to deliver exceptional results.
+          </p>
+          <p>
+            Over the past 10 years, we have worked on all kinds of projects. From stations
+            to high-rise buildings, we create spaces that inspire and delight.
+          </p>
+          <p>
+            We work closely with our clients so that we understand the intricacies of each
+            project. This allows us to work in harmony the surrounding area to create truly
+            stunning projects that will stand the test of time.
+          </p>
+        </div>
+        <img class="welcome-content-img" src="./assets/home/desktop/image-welcome.jpg"
+          alt="picture of large transparent building">
+      </div>
+    </section>
+
+    <section class="about-preview  second-sub-section | container">
+      <picture>
+        <source srcset="./assets/home/desktop/image-small-team.jpg" media="(min-width: 60em)">
+        <source srcset="./assets/home/tablet/image-small-team.jpg" media="(min-width: 40em)">
+        <img class="project-img" src="./assets/home/mobile/image-small-team.jpg" alt="floating building">
+      </picture>
+      <div class="about-preview-info">
+        <h3 class="main-titles | fs-titles text-neutral-100">Small team, <br> big ideas</h3>
+        <a href="./about.html" type="button" class="link-btn">
+          About Us
+          <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+        </a>
+      </div>
+    </section>
+
+    <section class="featured  third-sub-section | container">
+      <div class="featured-info">
+        <h3 class="main-titles | fs-titles text-primary-700">Featured</h3>
+      </div>
+      <a href="./portfolio.html" type="button" class="link-btn">
+        See All
+        <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+      </a>
+      <div class="featured-items">
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-del-sol.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-del-sol.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-del-sol.jpg"
+              alt="nice view from the place near a big pool">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Project Del Sol</h4>
+            <a class="text-neutral-175 fs-300" href="./portfolio.html">View All Projects</a>
+          </div>
+          <p class="large-number | text-neutral-150 fs-xl">1</p>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-228b.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-228b.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-228b.jpg" alt="circular bridge">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">228B Tower</h4>
+            <a class="text-neutral-175 fs-300" href="./portfolio.html">View All Projects</a>
+          </div>
+          <p class="large-number | text-neutral-150 fs-xl">2</p>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-prototype.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-prototype.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-prototype.jpg"
+              alt="nice house with balcony">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Le Prototype</h4>
+            <a class="text-neutral-175 fs-300" href="./portfolio.html">View All Projects</a>
+          </div>
+          <p class="large-number | text-neutral-150 fs-xl">3</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer | container">
+    <div class="footer-container">
+      <div class="footer-logo-container">
+        <a href="./index.html">
+          <img class="footer-logo" src="./assets/footer-logo.svg" alt="arch logo">
+        </a>
+      </div>
+      <nav class="secondary-nav">
+        <ul>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="./portfolio.html" type="button" class="link-btn">
+        See Our Portfolio
+        <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

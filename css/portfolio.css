@@ -1,0 +1,52 @@
+@import "./style.css";
+
+.featured {
+  overflow: hidden;
+}
+
+@media (min-width: 40em) {
+  .featured {
+    position: relative;
+  }
+  .featured::before {
+    content: "PORTFOLIO";
+    font-size: var(--fs-300);
+    letter-spacing: 20px;
+    position: absolute;
+    inset: 7.5rem 0 0 -7.125rem;
+    color: var(--clr-primary-200);
+    width: fit-content;
+    height: fit-content;
+    rotate: 90deg;
+    animation: slideIn 500ms ease;
+  }
+}
+
+@media (min-width: 76em) {
+  .featured::before {
+    inset: 7.5rem 0 0 calc((100vw - 1650px) / 4);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes slideIn {
+    0% {
+      top: 100%;
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      top: 7.5rem;
+    }
+  }
+}
+
+/* Header Gap */
+
+@media (max-width: 40em) {
+  .gap-bott-header {
+    padding-bottom: 5.5rem;
+  }
+}

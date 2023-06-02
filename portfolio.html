@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="./assets/css/fontawesome.css" rel="stylesheet">
+  <link href="./assets/css/brands.css" rel="stylesheet">
+  <link href="./assets/css/solid.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
+
+  <script src="./js/main.js" defer></script>
+
+  <title>Frontend Mentor | Arch Studio Website Challenge</title>
+</head>
+
+<body>
+
+  <header class="primary-header |  gap-bott-header">
+    <div class="header-collection | container">
+      <a href="./index.html">
+        <img class="header-logo" src="./assets/logo.svg" alt="arch logo">
+      </a>
+      <button class="mobile-nav" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="primary-nav fs-300 fw-bold">
+        <ul>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><button class="light-dark-toggle" data-mode="light" aria-label="">
+              <span class="sr-only">Light or Dark mode toggle</span>
+              <span class="toggler"></span>
+            </button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="featured  third-sub-section">
+      <div class="featured-items | container">
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-seraph.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-seraph.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-seraph.jpg" alt="high-tech hallway">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Seraph Station</h4>
+            <p class="text-neutral-175 fs-300">September 2019</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-eebox.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-eebox.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-eebox.jpg"
+              alt="modern building in box shape">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Eebox Building</h4>
+            <p class="text-neutral-175 fs-300">August 2017</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-federal.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-federal.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-federal.jpg"
+              alt="large modern skyscraper">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Federal II Tower</h4>
+            <p class="text-neutral-175 fs-300">March 2017</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-del-sol.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-del-sol.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-del-sol.jpg"
+              alt="nice view from the place near a big pool">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Project Del Sol</h4>
+            <p class="text-neutral-175 fs-300">January 2016</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-prototype.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-prototype.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-prototype.jpg"
+              alt="nice house with balcony">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Le Prototype</h4>
+            <p class="text-neutral-175 fs-300">October 2015</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-228b.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-228b.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-228b.jpg" alt="circular bridge">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">228B Tower</h4>
+            <p class="text-neutral-175 fs-300">April 2015</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-edelweiss.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-edelweiss.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-edelweiss.jpg"
+              alt="large luxurios hotel">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Grand Edelweiss Hotel</h4>
+            <p class="text-neutral-175 fs-300">December 2013</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-netcry.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-netcry.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-netcry.jpg"
+              alt="spooky inside of a roof view">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Netcry Tower</h4>
+            <p class="text-neutral-175 fs-300">August 2012</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-hypers.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-hypers.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-hypers.jpg"
+              alt="view from being surounded by buildings">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Hypers</h4>
+            <p class="text-neutral-175 fs-300">January 2012</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-sxiv.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-sxiv.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-sxiv.jpg"
+              alt="wiggly shaped large building">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">SXIV Tower</h4>
+            <p class="text-neutral-175 fs-300">March 2011</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-trinity.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-trinity.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-trinity.jpg"
+              alt="a wide transparent building">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Trinity Bank Tower</h4>
+            <p class="text-neutral-175 fs-300">September 2010</p>
+          </div>
+        </div>
+        <div class="featured-item">
+          <picture class="featured-item-img-container">
+            <source srcset="./assets/portfolio/desktop/image-paramour.jpg" media="(min-width: 60em)">
+            <source srcset="./assets/portfolio/tablet/image-paramour.jpg" media="(min-width: 40em)">
+            <img class="featured-item-img" src="./assets/portfolio/mobile/image-paramour.jpg"
+              alt="expensive large transparent building">
+          </picture>
+          <div class="featured-item-info">
+            <h4 class="featured-item-title | fs-500 fw-bold text-neutral-100">Project Paramour</h4>
+            <p class="text-neutral-175 fs-300">February 2008</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer | container">
+    <div class="footer-container">
+      <div class="footer-logo-container">
+        <a href="./index.html">
+          <img class="footer-logo" src="./assets/footer-logo.svg" alt="arch logo">
+        </a>
+      </div>
+      <nav class="secondary-nav">
+        <ul>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="./portfolio.html" type="button" class="link-btn">
+        See Our Portfolio
+        <img class="arrow-icon" src="./assets/icons/icon-arrow.svg" alt="">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
