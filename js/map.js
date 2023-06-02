@@ -9,7 +9,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 let myIcon = L.icon({
-  iconUrl: "../assets/icons/pin.png",
+  iconUrl: "./assets/icons/pin.png",
   iconSize: [50, 47],
   iconAnchor: [22, 94],
   popupAnchor: [-3, -76],
