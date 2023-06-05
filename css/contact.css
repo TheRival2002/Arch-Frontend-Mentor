@@ -242,6 +242,16 @@ body.dark-mode-enabled .contact-content-desc {
   padding-block: 2.5rem 2.75rem;
 }
 
+body.dark-mode-enabled .details-container .link-btn:hover,
+body.dark-mode-enabled .details-container .link-btn:focus-visible {
+  background-color: transparent;
+}
+
+.details-container .link-btn:hover,
+.details-container .link-btn:focus-visible {
+  background-color: transparent;
+}
+
 .details > :first-child {
   padding-bottom: 1.5rem;
 }

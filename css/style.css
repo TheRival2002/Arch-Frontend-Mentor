@@ -222,11 +222,11 @@ body {
     transition: filter 350ms ease;
   }
   .link-btn:hover,
-  .link-btn:focus {
+  .link-btn:focus-visible {
     filter: brightness(80%);
   }
   .link-btn:hover > img,
-  .link-btn:focus > img {
+  .link-btn:focus-visible > img {
     animation: arrowShuffle 1400ms ease;
   }
 }
